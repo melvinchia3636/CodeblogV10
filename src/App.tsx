@@ -1,4 +1,5 @@
 /* eslint-disable react/jsx-one-expression-per-line */
+import { Icon } from '@iconify/react';
 import React from 'react';
 import Logo from '../public/images/logo.svg';
 
@@ -23,6 +24,20 @@ function App() {
             <span className="text-primary">04.</span> get in touch
           </li>
         </ul>
+        <div className="fixed right-0 top-0 translate-x-1/2 -translate-y-1/2">
+          <div className="rotate-45 w-36 h-36 bg-primary" />
+          <a
+            href="https://github.com/melvinchia3636"
+            target="_blank"
+            rel="noreferrer"
+            className="absolute top-1/2 translate-y-[50%] translate-x-full"
+          >
+            <Icon
+              icon="simple-icons:github"
+              className="w-7 h-7 text-background"
+            />
+          </a>
+        </div>
       </nav>
       <section className="w-full flex-1 flex flex-col items-center pb-24 relative">
         <div className="w-full px-20 flex flex-col items-center gap-32">
@@ -63,14 +78,15 @@ function App() {
           </div>
         </div>
       </section>
-
       <section className="flex w-full px-32 pt-32 gap-32">
         <div className="w-2/5">
-          <span className="uppercase font-medium mb-4 block text-2xl tracking-widest text-primary">
+          <span className="uppercase font-medium mb-2 block text-2xl tracking-widest text-primary">
             WHO AM I?
           </span>
-          <h2 className="text-5xl tracking-wide leading-tight font-medium">
-            I&apos;m a minimalist aiming to make the Internet prettier.
+          <h2 className="text-[4rem] tracking-wide leading-[1.1] font-semibold">
+            The iterpreter
+            <br />
+            of practical minimalism
           </h2>
         </div>
         <div className="w-3/5 h-full flex flex-col items-center justify-end">
@@ -107,12 +123,34 @@ function App() {
           </div>
         </div>
       </section>
+      <section className="px-32 pt-32 w-full grid grid-cols-3 h-72">
+        <div className="bg-primary w-full h-full flex flex-col items-center justify-center gap-2">
+          <p className="font-semibold text-background text-6xl tracking-wide">
+            4+
+          </p>
+          <p className="text-background uppercase tracking-wide text-lg font-medium">
+            Years of Experience
+          </p>
+        </div>
+        <div className="border-2 border-r-0 border-primary w-full h-full flex flex-col items-center justify-center gap-2">
+          <p className="font-semibold text-6xl tracking-wide">20+</p>
+          <p className="uppercase tracking-wide text-lg font-medium">
+            Projects Completed
+          </p>
+        </div>
+        <div className="border-2 border-primary w-full h-full flex flex-col items-center justify-center gap-2">
+          <p className="font-semibold text-6xl tracking-wide">5+</p>
+          <p className="uppercase tracking-wide text-lg font-medium">
+            satisfied customers
+          </p>
+        </div>
+      </section>
       <section className="w-full px-36 pt-36 flex flex-col items-center">
-        <span className="uppercase font-semibold mb-4 block">
-          <span className="text-primary">02.</span>PORTFOLIO
+        <span className="uppercase font-medium mb-2 block text-2xl tracking-widest text-primary">
+          Noteworthy Projects
         </span>
-        <h2 className="text-center uppercase tracking-[0.3rem] text-5xl font-light">
-          Featured Projects
+        <h2 className="text-[4rem] tracking-wide leading-[1.1] font-semibold">
+          Cool stuff I&apos;ve done
         </h2>
       </section>
     </main>
