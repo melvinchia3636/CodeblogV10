@@ -30,9 +30,11 @@ function App() {
         className="fixed w-full bg h-screen object-cover z-[-1] opacity-"
       />
       <nav className="w-full flex flex-col items-center gap-8 pt-16 px-28">
-        <h1 className="font-normal tracking-[0.2em] text-3xl uppercase animate__animated animate__fadeInUp">
-          <img src={Logo} alt="" />
+        <h1 className="font-normal font-['Jetbrains_Mono'] tracking-[0.2em] text-3xl uppercase animate__animated animate__fadeInUp mt-16">
+          <span className="text-primary font-['Jetbrains_Mono']">C</span>ODE
+          <span className="text-primary font-['Jetbrains_Mono']">B</span>LOG
         </h1>
+        <p className="-mt-6 font-['Jetbrains_Mono'] text-sm">by Melvin Chia.</p>
         <ul className="uppercase font-medium flex tracking-wider gap-12 mt-[4px] animate__animated animate__fadeInDown">
           <li>
             <span className="text-primary">01.</span> home
@@ -71,10 +73,10 @@ function App() {
                 <span className="font-medium text-primary">Melvin Chia</span>. I
                 build websites that are
               </p>
-              <h2 className="text-[3.8rem] tracking-[0.16em] uppercase text-center leading-normal animate__animated animate__fadeInRight">
+              <h2 className="text-[3.8rem] tracking-[0.16em] font-medium uppercase text-center leading-normal animate__animated animate__fadeInRight">
                 minimalistic yet beautiful
               </h2>
-              <p className="uppercase text-2xl pb-24 mt-12 tracking-widest font-medium animate__animated animate__fadeInLeft">
+              <p className="uppercase text-2xl pb-24 mt-12 tracking-widest animate__animated animate__fadeInLeft">
                 gorgeous <span className="text-primary">-</span> unconventional{' '}
                 <span className="text-primary">-</span> concise
               </p>
@@ -197,17 +199,12 @@ function App() {
           </p>
         </div>
       </AnimationOnScroll>
-      <section
-        style={{
-          backgroundImage: `url(${Background2})`,
-        }}
-        className="w-full pt-36 flex flex-col items-center bg-fixed bg-background/70 bg-blend-overlay"
-      >
+      <section className="w-full pt-36 flex flex-col items-center">
         <span className="uppercase font-medium mb-2 block text-2xl tracking-widest text-primary">
           Notable Projects
         </span>
         <h2 className="text-[4rem] tracking-wide leading-[1.1] font-medium">
-          Editor&apos;s Choices
+          Developer&apos;s Choices
         </h2>
         <div className="flex flex-col gap-32 mt-24 w-full px-36">
           <div className="flex items-center h-72 w-full gap-12">
@@ -285,6 +282,60 @@ function App() {
             </button>
           </div>
         </div>
+      </section>
+
+      <section className="w-full pt-16 flex flex-col items-center">
+        <div className="flex w-full px-36 gap-24 items-center">
+          <div className="w-1/2">
+            <span className="uppercase font-medium mb-2 block text-2xl tracking-widest text-primary">
+              Abilities
+            </span>
+            <h2 className="text-[4.6rem] tracking-wide leading-[1.1] font-medium relative">
+              What I&apos;m Capable Of
+              <div className="w-36 h-36 pattern-dots-lg text-primary absolute -bottom-8 z-[-1] -left-8" />
+            </h2>
+          </div>
+          <p className="w-1/2 text-xl tracking-wide">
+            Developer is a job that requires a lot of energy and passion. I am
+            always ready to face new challenges and learn new things. I am a
+            person who loves to learn and I am always open to new ideas.
+          </p>
+        </div>
+        <div className="grid grid-cols-3 w-full px-36 mb-24 mt-28 divide-x-2 divide-neutral-200">
+          <div className="pr-8">
+            <Icon icon="iconoir:design-nib" className="text-6xl text-primary" />
+            <h3 className="text-3xl font-medium mt-8 tracking-wide">
+              UI/UX Design
+            </h3>
+            <p className="mt-4 text-lg tracking-wide">
+              I'm fully capable of creating beautiful and user-friendly UI for
+              your website.
+            </p>
+          </div>
+          <div className="px-8">
+            <Icon icon="iconoir:code" className="text-6xl text-primary" />
+            <h3 className="text-3xl font-medium mt-8 tracking-wide">
+              Development
+            </h3>
+            <p className="mt-4 text-lg tracking-wide">
+              I'm able to develop high-quality and responsive websites using the
+              latest technologies.
+            </p>
+          </div>
+          <div className="pl-8">
+            <Icon
+              icon="iconoir:light-bulb-on"
+              className="text-6xl text-primary"
+            />
+            <h3 className="text-3xl font-medium mt-8 tracking-wide">
+              Problem Solving
+            </h3>
+            <p className="mt-4 text-lg tracking-wide">
+              I'm a person who loves to solve problems and I'm always ready to
+              face new challenges.
+            </p>
+          </div>
+        </div>
         <img
           src={Waves}
           alt="layer"
@@ -292,7 +343,7 @@ function App() {
         />
       </section>
 
-      <section className="w-full px-32 py-32 bg-primary" />
+      <section className="w-full px-32 py-32 bg-primary flex flex-col items-center" />
     </main>
   );
 }
